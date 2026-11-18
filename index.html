@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MantoFlota · Control de Mantenimiento</title>
+<meta name="theme-color" content="#0f172a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="img/icon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><img src="img/icon.svg" alt="" width="28" height="28"><div><b>MantoFlota</b><small id="sync">Modo local</small></div></div>
+    <nav id="nav" aria-label="Secciones"></nav>
+    <div id="userbox"></div>
+  </div>
+</header>
+<main id="view"></main>
+<button id="fab" aria-label="Registro rápido" onclick="A.quick()">+</button>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" hidden></div>
+<script src="js/store.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
